@@ -20,3 +20,9 @@ git remote -v
 
 ### push your code
 git push -u origin master
+
+### clone repository
+git clone https://github.com/omomehinvictor/data_encryption_decryption_hash_func.git
+
+### pull changes from github
+git pull https://github.com/omomehinvictor/demo_git.git
