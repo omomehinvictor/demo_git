@@ -11,3 +11,12 @@ git config --global --unset user.name
 git add .
 ### commit file(s)
 git commit -m "i just did my first commit"
+
+### pick code from New created repo page
+git remote add origin https://github.com/omomehinvictor/demo_git.git
+
+### for the first time you must use this code before using git push
+git remote -v
+
+### push your code
+git push -u origin master
