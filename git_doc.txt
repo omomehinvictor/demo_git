@@ -1,0 +1,13 @@
+git --version
+###configure global credentials
+git config --global user.name "ur name"
+git config --global user.email example@gmail.com
+### list all credentials
+git config --list
+### you can exist the --list from command line with "q"
+### if you wish to reset your --global config use the next line of code
+git config --global --unset user.name
+### add untracked files
+git add .
+### commit file(s)
+git commit -m "i just did my first commit"
