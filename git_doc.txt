@@ -1,21 +1,27 @@
+### check git version
 git --version
+
 ###configure global credentials
 git config --global user.name "ur name"
 git config --global user.email example@gmail.com
+
 ### list all credentials
 git config --list
 ### you can exist the --list from command line with "q"
+
 ### if you wish to reset your --global config use the next line of code
 git config --global --unset user.name
+
 ### add untracked files
 git add .
+
 ### commit file(s)
 git commit -m "i just did my first commit"
 
 ### pick code from New created repo page
 git remote add origin https://github.com/omomehinvictor/demo_git.git
 
-### for the first time you must use this code before using git push
+### check remote path to the repo before pushing
 git remote -v
 
 ### push your code
@@ -26,3 +32,20 @@ git clone https://github.com/omomehinvictor/data_encryption_decryption_hash_func
 
 ### pull changes from github
 git pull https://github.com/omomehinvictor/demo_git.git
+
+### how to generate SSH keygen
+ssh-keygen -t rsa -b 4096 -C "your email"
+
+### how to access rsa public key
+cat ~/.ssh/id_rsa.pub
+### then copy the output which is the public key and add it to github hosting service account.
+
+### how to view existing SSH keygen
+ls -al ~/.ssh
+
+### how to delete ssh keygen files
+rm ~/.ssh/id_rsa
+rm ~/.ssh/id_rsa.pub 
+
+
+
